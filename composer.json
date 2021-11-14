@@ -1,0 +1,19 @@
+{
+    "name": "julia/open-server",
+    "description": "my first progect",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jula Kiselkova",
+            "email": "yulia.kiselkova@mail.ru"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
