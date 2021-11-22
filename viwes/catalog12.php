@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php print_r($product);?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
