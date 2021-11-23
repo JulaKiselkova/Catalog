@@ -53,10 +53,10 @@ class CatalogController
     private function makeSnakeCaseToCamel($fileName) {
         $arrFullName = str_split($fileName);
         if(in_array("_", $arrFullName)) {
-            $arrSeparatedName = explode('_',$fileName); // afisha picture mmf
+            $arrSeparatedName = explode('_',$fileName);
             $nameCamelCase = $arrSeparatedName[0];
             for($i = 1; $i < count($arrSeparatedName); $i++) {
-                $arrPartName = str_split($arrSeparatedName[$i]);//picture - arr
+                $arrPartName = str_split($arrSeparatedName[$i]);
 
                 $bigLetter = strtoupper($arrPartName[0]);
                 array_shift($arrPartName);
