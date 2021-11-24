@@ -1,6 +1,6 @@
 # Catalog
-Hometask: Uploading files. You can see realization here: app/Controllers/CatalogController.php
-
+Hometask: Uploading files.
+You can see realization here: app/Controllers/CatalogController.php
 ### Next tasks are done:
 1. Uploading more than 1 file
 2. Uploading files to the folder downloads
