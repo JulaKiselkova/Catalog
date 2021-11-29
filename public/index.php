@@ -8,6 +8,8 @@
         '/product' => 'App\\Controllers\\CatalogController@showProduct',
         '/add_product_form' => 'App\\Controllers\\CatalogController@showForm',
         '/save_product' => 'App\\Controllers\\CatalogController@saveProduct',
+        '/form_homeTask' => 'App\\Controllers\\CatalogController@showFormHomeTask',
+        '/save_homeTask' => 'App\\Controllers\\CatalogController@saveHomeTask',
     ];
 
     $runAction = 'App\\Controllers\\SiteController@notFound';
