@@ -23,7 +23,7 @@ class CatalogController
 
     public function saveProduct() {
         print_r($_FILES['img']);
-        $path = $_SERVER['DOCUMENT_ROOT'] . '/' . $_FILES['img']['name'];
+        $path = $_SERVER['DOCUMENT_ROOT'].'/'.$_FILES['img']['name'];
         //copy($_FILES['img']['tmp_name'], __DIR__.'/1.png');
         copy($_FILES['img']['tmp_name'], $path);
         move_uploaded_file($_FILES['img']['name'], $path);
