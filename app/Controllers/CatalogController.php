@@ -11,6 +11,7 @@ class CatalogController
     }
 
     public function showProduct() {
+
         $id = (int) $_GET['id'];
         $product = Product::findById($id);
         var_dump($product);
@@ -21,7 +22,7 @@ class CatalogController
         render('addProductForm.php');
     }
 
-    public  function saveProduct() {
+    public function saveProduct() {
         print_r($_FILES['img']);
         $path = $_SERVER['DOCUMENT_ROOT'].'/'.$_FILES['img']['name'];
         //copy($_FILES['img']['tmp_name'], __DIR__.'/1.png');
@@ -29,6 +30,7 @@ class CatalogController
         move_uploaded_file($_FILES['img']['name'], $path);
         //print_r($_POST);
     }
+
 
     //___HOMETASK___
 
@@ -93,3 +95,4 @@ class CatalogController
     }
 
 }
+
